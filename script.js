@@ -389,4 +389,8 @@ function createHeart(){
 
 }
 
-setInterval(createHeart,300);
+setIwindow.addEventListener("load", function(){
+
+    setInterval(createHeart,300);
+
+});
