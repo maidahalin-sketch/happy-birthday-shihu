@@ -363,3 +363,30 @@ function musicFade(){
     },200);
 
 }
+/* ❤️ Heart Rain */
+
+function createHeart(){
+
+    const container = document.getElementById("heart-rain");
+
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    heart.innerHTML = "❤️";
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.fontSize = (18 + Math.random() * 25) + "px";
+
+    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+    container.appendChild(heart);
+
+    setTimeout(function(){
+        heart.remove();
+    },8000);
+
+}
+
+setInterval(createHeart,300);
